@@ -1,0 +1,73 @@
+.benefits {
+    min-height: 998px;
+    padding-top: 180px;
+    &__tabs {
+        margin: 0;
+        padding: 0;
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 160%;
+        color: #9A9CA5;
+    }
+    &__tab {
+        width: 307px;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 1s;
+        svg {
+            margin-right: 8px;
+        }
+        &_active, &:hover {
+            border : 1px solid #FF3F3A;
+            color: #FF3F3A;
+            box-shadow: (0 6px 4px 0 rgba(0, 0, 0, 0.15));
+            svg {
+                fill: #FF3F3A;
+            }
+        }
+    }
+    &__content {
+        position: relative;
+        display: none;
+        &_active {
+            display: block;
+        }
+    }
+    &__text {
+        width: 495px;
+        margin: 0 auto;
+        margin-top: 181px;
+        z-index: 0;
+    }
+    &__title {
+        color: $main-color;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 130%;
+    }
+    &__descr {
+        margin-top: 24px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #424551;
+    }
+    &__img {
+        position: absolute;
+        right: 10px;
+        top: -121px;
+        z-index: -1;
+    }
+    &__svg {
+        width: 16px;
+        height: 16px;
+        fill: #9A9CA5
+    }
+}

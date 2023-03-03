@@ -1,0 +1,19 @@
+.subscribe {
+    position: relative;
+    min-height: 564px;
+    padding: 120px 0 180px 0;
+    background: url('../img/background_subscribe.svg') center center/cover no-repeat;
+    &__img {
+        position: absolute;
+        bottom: 0;
+        &:nth-child(1) {
+            left: 0;
+        }
+        &:nth-child(2) {
+            right: 0;
+        }
+    }
+    &__form {
+        margin-top: 60px;
+    }
+}

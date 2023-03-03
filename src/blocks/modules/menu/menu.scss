@@ -1,0 +1,41 @@
+.menu {
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    &__logo {
+        margin-right: 60px;
+    }
+    &__item {
+        width: 420px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        margin-right: 225px;
+        list-style-type: none;
+    }
+    &__link {
+        color: rgba(66, 69, 81, 1);
+        font-weight: 700;
+        font-size: 16px;
+        transition: all 0.5s;
+        &:hover {
+            color: #FF3F3A;
+            text-decoration: underline;
+        }
+        &:active {
+            color: red;
+        }
+        &:nth-child(2) {
+            margin-right: 0;
+        }
+    }
+    &__profile {
+        display: flex;
+        align-items: center;
+        margin-left: 36px;
+        img {
+            margin-right: 8px;
+        }
+    }
+}

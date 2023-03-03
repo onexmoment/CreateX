@@ -1,0 +1,105 @@
+.button {
+    height: 52px;
+    width: 206px;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:active {
+        background: linear-gradient(55.95deg, #FF3F3A 100%, #F75E05 100%);
+    }
+    &:hover {
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    &_nobg {
+        width: 148px;
+        color: rgba(249, 82, 24, 1);
+        background: none;
+        border: 1.5px solid rgba(249, 82, 24, 1);
+        &:hover {
+            background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+            color: #fff;
+        }
+        &:active {
+            background: linear-gradient(55.95deg, #FF3F3A 100%, #F75E05 100%);
+        }
+        &_event {
+            width: 136px;
+            height: 44px;
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+    &_explore, &_courses {
+        width: 200px;
+        margin-left: 24px;
+    }
+    &_about {
+        margin-top: 48px;
+        width: 161px;
+        height: 44px;
+        font-size: 14px;
+    }
+    &_events {
+        width: 215px;
+    }
+    &_blog {
+        width: 159px;
+    }
+    &_subscribe {
+        width: 154px;
+    }
+}
+.prev, .next {
+    position: absolute;
+    border: none;
+    background: none;
+    z-index: 1;
+    &:hover {
+        svg path {
+            fill: #fff;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            width: 48px;
+            height: 48px;
+            background: #FF3F3A;
+            border-radius: 100%;
+            z-index: -1;
+            right: -14px;
+            top: -14px;
+        }
+    }
+    &_top {
+        top: 60px;
+        right: 60px;
+    }
+    &_center {
+        bottom : 243px
+
+    }
+}
+.next {
+    right: 14px;
+    &:hover {
+        &::before {
+            top: -12px;
+        }
+    }
+    &_center {
+        bottom: 237px;
+        right: -6px;
+    }
+}
+.prev {
+    &_top {
+        top: 63px;
+    }
+}

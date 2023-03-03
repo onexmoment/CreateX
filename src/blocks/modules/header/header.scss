@@ -1,0 +1,79 @@
+.header {
+    &__svg {
+        width: 5px;
+        height: 5px;
+        fill: red;
+    }   
+    min-height: 1080px;
+    padding: 20px 0 80px 0;
+    background: url('../img/background.svg') center center/cover no-repeat;
+    &__play {
+        display: flex;
+        align-items: center;
+        margin-top: 156px;
+    }
+    &__link {
+        margin-right: 16px;
+        border-radius: 100%;
+        transition: all 1s;
+        &:hover {
+            box-shadow: 0 0 0 16px rgba(253, 185, 170, 1);
+        }
+    }
+    &__label {
+        color: $main-color;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    &__title {
+        margin-top: 40px;
+        color: $main-color;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 83px;
+        letter-spacing: 1px;
+    }
+    &__buttons {
+        margin-top: 60px;
+    }
+    &__image {
+        position: absolute;
+        left: 696px;
+        top: 160px;
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 259px;
+    }
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        &::after {
+            position: absolute;
+            left: calc(100% + 66px);
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #FF3F3A;
+            border-radius: 100%;
+        }
+        &:nth-child(4) {
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &__numbers {
+        margin-right: 12px;
+        color: $main-color;
+        font-weight: 900;
+        font-size: 46px;
+    }
+    &__descr {
+        color: $main-color;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}

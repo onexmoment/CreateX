@@ -1,0 +1,116 @@
+.blog {
+	min-height: 959px;
+	padding: 120px 0 180px 0;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 60px;
+	}
+
+	&-item {
+		position: relative;
+		width: 390px;
+		height: 507px;
+
+		&__header {
+			position: absolute;
+			top: 12px;
+			left: 12px;
+			display: flex;
+			padding: 1px 8px;
+			min-width: 73px;
+			background: #fff;
+			border-radius: 4px;
+		}
+
+		&__type {
+			margin-left: 4px;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 150%;
+			color: #424551;
+		}
+
+		&__descr {
+			display: flex;
+			margin-top: 16px;
+			font-size: 14px;
+			line-height: 150%;
+			color: #787A80;
+		}
+
+		&__proff {
+			margin-right: 12px;
+			font-weight: 700;
+			display: flex;
+			align-items: center;
+
+			&::after {
+				content: '|';
+				margin-left: 12px;
+			}
+		}
+
+		&__date {
+			margin-right: 12px;
+
+			img {
+				margin-right: 8px;
+			}
+		}
+
+		&__time {
+			img {
+				margin-right: 8px;
+			}
+
+			&::before {
+				content: '|';
+				margin-right: 12px;
+			}
+		}
+
+		&__title {
+			margin-top: 8px;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 150%;
+			color: $main-color;
+		}
+
+		&__text {
+			margin-top: 8px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 160%;
+			color: #424551;
+		}
+
+		&__link {
+			display: flex;
+			align-items: center;
+			margin-top: 16px;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 160%;
+			color: $main-color;
+
+			&:hover {
+				text-decoration: none;
+				color: red;
+			}
+
+			svg {
+				margin-left: 8px;
+				fill: red;
+			}
+		}
+	}
+}

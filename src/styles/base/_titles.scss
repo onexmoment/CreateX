@@ -1,0 +1,28 @@
+.title {
+    color: $main-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &_center {
+        text-align: center;
+		&_mt80 {
+			margin-top: 80px;
+		}
+        &_mt180 {
+            margin-top: 180px;
+        }
+    }
+}
+.subtitle {
+    color: $main-color;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    margin-top: 8px;
+    &_center {
+        text-align: center;
+    }
+}

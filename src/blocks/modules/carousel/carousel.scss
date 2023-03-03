@@ -1,0 +1,94 @@
+.carousel {
+    min-height: 1570px;
+    background: url('../img/bg_3.jpg') center center/cover no-repeat;
+    padding: 166px 0 100px;
+    &-team {
+        margin-top: 60px;
+        &__content {
+            width: 285px;
+        }
+        &__title {
+            margin-top: 16px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 150%;
+            text-align: center;
+            color: #424551;
+        }
+        &__subtitle {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            text-align: center;
+            color: #787A80;
+        }
+        &__image {
+            position: relative;
+            height: 340px;
+            border-radius: 5px;
+            background: #FFCF2D;
+            img {
+                position: absolute;
+                bottom: 0;
+                right: 18px;
+            }
+        }
+    }
+    &-students {
+        margin-top: 60px;
+        &__item {
+            position: relative;
+            width: 1020px;
+            height: 344px;
+            margin: 0 auto;
+            padding: 64px 105px 64px 170px;
+            background: #fff;
+        }
+        &__text {
+            width: 752px;
+            margin: 0 auto;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: #424551;
+        }
+        &__bracers {
+            position: absolute;
+            left: 105px;
+        }
+        &__image {
+            position: absolute;
+            bottom: 64px;
+        }
+        &__title {
+            margin: 35px 0 4px 92px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 160%;
+            color: $main-color;
+        }
+        &__subtitle {
+            margin-left: 92px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #787A80;
+        }
+    }
+    .tns-nav {
+        margin-top: 60px;
+        text-align: center;
+        > button {
+            width: 30px;
+            height: 0px;
+            border: 2px solid #B3B7BC;
+            background: #B3B7BC;
+            border-radius: 4px;
+            margin-right: 12px
+        }
+    }
+    #tns2-mw {
+        margin: 0 auto;
+        width: 1024px;
+    }
+}
